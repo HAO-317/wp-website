@@ -221,10 +221,11 @@ submitButton.insertAdjacentElement('afterend', feedback);
 contactForm?.addEventListener('submit', (e) => {
   e.preventDefault();
   const name = (document.getElementById('name') as HTMLInputElement).value.trim();
+  const company = (document.getElementById('company') as HTMLInputElement).value.trim();
   const email = (document.getElementById('mail') as HTMLInputElement).value.trim();
   const message = (document.getElementById('textarea') as HTMLTextAreaElement).value.trim();
 
-  if (!name || !email || !message) {
+  if (!name || !company || !email || !message) {
     feedback.textContent = 'Please fill in all fields.';
     feedback.style.color = 'red';
     return;
@@ -235,10 +236,10 @@ contactForm?.addEventListener('submit', (e) => {
     return;
   }
 
-  const mailtoLink = `mailto:info@Wagner-partners.com?subject=Contact Form Submission&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
+  const mailtoLink = `mailto:info@Wagner-partners.com?subject=Contact Form Submission&body=Name: ${encodeURIComponent(name)}%0AEmail:  ${encodeURIComponent(company)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
   window.location.href = mailtoLink;
 
-  feedback.textContent = 'Submitted successfully. We will contact you soon!';
+  feedback.textContent = 'Please complete the email sending to confirm the successful submission of your contact inquiry!';
   feedback.style.color = 'green';
   contactForm.reset();
 });

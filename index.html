@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en|de|zh">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wagner & Partners Homepage</title>
+    <title>Wagner & Partners - The Credible Way To Incredible Success</title>
   </head>
   <body>
     <header class="header">
@@ -20,7 +21,14 @@
         <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
           <path d="M24 21.2505V23.2505C24 23.5213 23.901 23.7557 23.7031 23.9536C23.5052 24.1515 23.2708 24.2505 23 24.2505H1C0.729167 24.2505 0.494792 24.1515 0.296875 23.9536C0.0989583 23.7557 0 23.5213 0 23.2505V21.2505C0 20.9797 0.0989583 20.7453 0.296875 20.5474C0.494792 20.3494 0.729167 20.2505 1 20.2505h33C23.2708 20.2505 23.5052 20.3494 23.7031 20.5474C23.901 20.7453 24 20.9797 24 21.2505ZM24 13.2505V15.2505C24 15.5213 23.901 15.7557 23.7031 15.9536C23.5052 16.1515 23.2708 16.2505 23 16.2505H1C0.729167 16.2505 0.494792 16.1515 0.296875 15.9536C0.0989583 15.7557 0 15.5213 0 15.2505V13.2505C0 12.9797 0.0989583 12.7453 0.296875 12.5474C0.494792 12.3494 0.729167 12.2505 1 12.2505h33C23.2708 12.2505 23.5052 12.3494 23.7031 12.5474C23.901 12.7453 24 12.9797 24 13.2505ZM24 5.25049V7.25049C24 7.52132 23.901 7.7557 23.7031 7.95361C23.5052 8.15153 23.2708 8.25049 23 8.25049H1C0.729167 8.25049 0.494792 8.15153 0.296875 7.95361C0.0989583 7.7557 0 7.52132 0 7.25049V5.25049C0 4.97965 0.0989583 4.74528 0.296875 4.54736C0.494792 4.34945 0.729167 4.25049 1 4.25049h33C23.2708 4.25049 23.5052 4.34945 23.7031 4.54736C23.901 4.74528 24 4.97965 24 5.25049Z" fill="'white'"/>
         </svg>
-        <p class="language">🌐 <span>EN</span></p>
+        <div class="language">
+          <p class="language-toggle">🌐 <span data-key="language">EN</span></p>
+          <ul class="language-menu">
+            <li data-lang="en">EN</li>
+            <li data-lang="de">DE</li>
+            <li data-lang="zh">中文</li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -89,7 +97,7 @@
             </div>
             <div class="img-text-box2">
               <div class="image-container">
-                <img src="./src/assets/img/pic_metropolis4.jpg" alt="china affairs">
+                <img src="./src/assets/img/pic_shanghai.jpg" alt="china affairs">
               </div>
               <h4>China Affairs Expert</h4>
               <p>Your Partner for the Chinese Market</p>
@@ -135,6 +143,7 @@
           </article>
           <form>
             <input id="name" type="text" placeholder="Your Name" required />
+            <input id="company" type="text" placeholder="Company" required />
             <input type="email" id="mail" placeholder="Enter email" required />
             <textarea id="textarea" cols="30" rows="20" placeholder="Write Something" required ></textarea>
             <input class="subm" type="submit" value="Say Hello" >

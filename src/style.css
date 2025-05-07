@@ -23,12 +23,17 @@
   --back-color: #6A6A6A;
   --txt-trans: rgba(255, 255, 255, 0.50);
   --color-blue: rgba(0, 89, 255, 0.85);
+  --font-stack: "Helvetica Neue", "Noto Sans SC", Arial, sans-serif;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   /* border: 1px dashed rgb(21, 255, 0); */
+}
+
+html, body, p, h1, h2, h3, h4, h5, li, input, textarea, .modal-description, .partner-bio {
+  font-family: var(--font-stack);
 }
 
 html {
@@ -40,7 +45,7 @@ html {
 h1 {
   font-family: "NixieOne";
   font-size: 5.6rem;
-  font-weight: lighter;
+  font-weight:bold;
   text-shadow: 0.3rem 0.3rem 0.5rem rgb(0, 0, 0);
 }
 h2 {
@@ -69,10 +74,10 @@ li,.language {
 }
 a {
   font-family: "Helvetica Neue";
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 
   text-decoration:none;    
-  padding: 0.8rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   border-radius: 5px;
   color: var(--txt-blu);
 
@@ -508,7 +513,7 @@ html {
   width: 80%;
   max-height: 80%;
   overflow-y: auto;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   position: relative;
   display: flex;
@@ -522,14 +527,30 @@ html {
   max-height: 300px;
   object-fit: cover;
 }
-
-.carousel-image {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  display: none;
+.modal-content h4{
+  padding: 2px 10px;
+  background-color: var(--txt-blu);
+  color: white;
+  font-size: 3rem;
+  border-radius: 0 5px 0 5px;
+  letter-spacing: 1px;
+  font-style: italic;
 }
 
+.carousel {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  display: none;
+}
 .carousel-image.active {
   display: block;
 }
@@ -537,22 +558,23 @@ html {
 .carousel-prev,
 .carousel-next {
   position: absolute;
-  top: 23%;
+  top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 10px;
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 4rem;
+  padding: 25px 5px;
+  border-radius: 5px;
 }
 
 .carousel-prev {
-  left: 20px;
+  left: 0px;
 }
 
 .carousel-next {
-  right: 20px;
+  right: 0px;
 }
 
 .carousel-prev:hover,
@@ -598,7 +620,9 @@ html {
 .modal-description li {
   margin-bottom: 8px;
   color: var(--color);
-  line-height: 1.6; /* 与正文一致 */
+  line-height: 1.6; 
+  font-size: 1.8rem;
+  font-style: italic;
 }
 .team-container {
   display: flex;
@@ -614,6 +638,10 @@ html {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /* border: 1px solid var(--txt-blu); */
+  border-radius: 0 10px 0 10px;
+  padding: 10px;
+  background-color: #bbbbbb29;
 }
 
 .partner-image {
@@ -690,12 +718,68 @@ html {
 /* 表单反馈 */
 .form-feedback {
   font-family: "Helvetica Neue";
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-top: 10px;
   text-align: center;
 }
 
-/* 平板屏幕（768px ≤ 宽度 < 1024px） */
+/* 语言选择器 */
+.language {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.language-toggle {
+  font-family: "Alegreya Sans";
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.language-toggle:hover {
+  color: yellow;
+  transform: scale(1);
+  text-shadow: 1px 1px 3px black;
+}
+
+.language-menu {
+  display: none;
+  position: absolute;
+  top: 32px;
+  right: -15px;
+  background-color: rgba(0, 89, 255, 0.95);
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  list-style: none;
+  padding: 10px 0;
+  min-width: 75px;
+  z-index: 100;
+}
+
+.language-menu.active {
+  display: block;
+}
+
+.language-menu li {
+  font-family: "Alegreya Sans";
+  font-size: 1.6rem;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.language-menu li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: yellow;
+}
+
+
+/*- 平板屏幕（768px ≤ 宽度 < 1024px） ---------*/
 @media screen and (max-width: 1023px) {
   /* About 和 Projects */
   .container-middle {
@@ -791,9 +875,35 @@ html {
   .header {
     padding: 10px 40px;
   }
+  .carousel {
+    width: 500px;
+    height: 250px;
+  }
+  .carousel-image {
+    width: 500px;
+    height: 250px;
+  }
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .partner-box {
+    width: 100%;
+    max-width: 550px;
+  }
+  .language-menu {
+    top: 25px;
+    right: -10px;
+    width: 100px;
+  }
+  .language-menu li {
+    font-size: 1.6rem;
+    padding: 8px 15px;
+  }
 }
 
-/* 手机屏幕（宽度 < 768px） */
+/*---- 手机屏幕（宽度 < 768px） --------*/
 @media screen and (max-width: 767px) {
   /* About 和 Projects */
   .container-middle {
@@ -909,9 +1019,58 @@ html {
   .logo {
     height: 60px;
   }
+  .carousel {
+    width: 300px;
+    height: 150px;
+  }
+  .carousel-image {
+    width: 300px;
+    height: 150px;
+  }
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0;
+  }
+  .partner-box {
+    width: 100%;
+    max-width: 450px;
+  }
+  .partner-image {
+    width: 150px;
+    height: 150px;
+  }
+  .partner-box h5 {
+    font-size: 1.8rem;
+  }
+  .partner-box li {
+    font-size: 1.5rem;
+  }
+  .partner-title,
+  .partner-professional,
+  .partner-bio {
+    font-size: 1.4rem;
+  }
+  .modal-close {
+    display: none;
+  }
+  .modal-content{
+    padding: 20px;
+  }
+  .language-menu {
+    top: 20px;
+    right: -5px;
+    width: 80px;
+  }
+  .language-menu li {
+    font-size: 1.4rem;
+    padding: 6px 10px;
+  }
 }
 
-/* 电脑屏幕（≥ 1024px） */
+/*------ 电脑屏幕（≥ 1024px） ----------*/
 @media screen and (min-width: 1024px) {
   .hamburger {
     display: none;

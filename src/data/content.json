@@ -1,24 +1,24 @@
 {
   "MISSION": {
     "title": "MISSION",
-    "description": "At Wagner&Partners®, we are committed to achieving extraordinary success through unwavering honesty, relentless innovation, and a steadfast dedication to sustainability. We prioritize fostering a balanced work/life environment that empowers our employees to thrive both professionally and personally. Our passion for excellence drives us to deliver superior products and services while upholding justice, respecting local laws, and adhering to ethical business practices endorsed by the International Chamber of Commerce. We reject favoritism, value our employees as integral members of our corporate family, and support their career development with clear opportunities for growth and participation in our success. As responsible corporate citizens, we actively support social causes, alleviate poverty, and protect the environment by avoiding harmful practices and preserving our planet’s ecosystem for future generations.",
+    "description": "At Wagner&Partners®, we are committed to achieving extraordinary success through unwavering honesty, relentless innovation, and a steadfast dedication to sustainability. <br>We prioritize fostering a balanced work/life environment that empowers our employees to thrive both professionally and personally. <br>Our passion for excellence drives us to deliver superior products and services while upholding justice, respecting local laws, and adhering to ethical business practices endorsed by the International Chamber of Commerce. <br>We reject favoritism, value our employees as integral members of our corporate family, and support their career development with clear opportunities for growth and participation in our success. <br>As responsible corporate citizens, we actively support social causes, alleviate poverty, and protect the environment by avoiding harmful practices and preserving our planet’s ecosystem for future generations.",
     "imageSrc": "./src/assets/img/pic_vision.jpg"
   },
   "TEAM": {
     "title": "TEAM",
     "partners": [
       {
-        "name": "Gisbert Wagner",
+        "name": "Gisbert Heinz Wagner",
         "title": "Managing Director",
-        "professionalTitle": "Certified Business Consultant",
-        "bio": "<ul><li>Over 20 years of experience in international business consulting.</li><li>Specialized in strategic planning and market expansion.</li><li>Led projects in Europe, Asia, and North America.</li><li>Expert in sustainable business practices.</li><li>Regular speaker at global industry conferences.</li><li>Ph.D. in Business Administration from LMU Munich.</li></ul>",
+        "professionalTitle": "Consulting Economist & Forensic Economist<br>📧 wagner@wagner-partners.com",
+        "bio": "<ul><li>Internationally recognized economist with over 50 years of experience in global trade, finance, and project management.</li><li>Principal at Arthur Young (now Ernst & Young), leading logistics and operations for clients worldwide.</li><li>Advised on major trade agreements, including NAFTA and CETA, shaping North American and EU economic policies.</li><li>Co-founded Paragon Estates GmbH in The Bahamas, managing post-hurricane rebuilding and tourism projects.</li><li>Facilitated high-value international financial transactions, including currency and precious metals trading.</li><li>Taught at universities like USC and Seneca College, developing materials on international finance and project management.</li><li>Trusted advisor to corporate leaders, governments, and institutions, ensuring value-driven, confidential outcomes.</li><li>Maintains a global network with footholds in North America, Western Europe, Asia, and the Caribbean.</li></ul>",
         "imageSrc": "./src/assets/img/gisbert_wagner.png"
       },
       {
         "name": "Hao Li",
         "title": "Managing Director",
-        "professionalTitle": "Certified Financial Analyst",
-        "bio": "<ul><li>15 years of expertise in cross-border financial solutions.</li><li>Deep knowledge of Chinese and Asian markets.</li><li>Developed financial strategies for Fortune 500 companies.</li><li>Advocate for sustainable investment practices.</li><li>MBA from Tsinghua University, Beijing.</li><li>Fluent in Mandarin, English, and German.</li></ul>",
+        "professionalTitle": "Business Consultant<br>📧 lee@wagner-partners.com",
+        "bio": "<ul><li>Expert in international business relations, driving strategic partnerships across Europe and Asia.</li><li>Partner Manager at Wagner & Partners, advising on global business setups, risk management, and key account development.</li><li>Led operations and digital communication projects for a Canadian NGO, enhancing global outreach.</li><li>Former Managing Director at WINGMAN International and United Unique Expo, overseeing 200+ trade shows annually.</li><li>Developed key accounts with top brands like Huawei, VW, and Porsche, strengthening China-Europe business ties.</li><li>Built and managed local and global competency partnerships for trade fairs and events in Germany and Asia.</li><li>Spearheaded business development in China for Holtmann Messe + Event, establishing branch offices.</li><li>Experienced designer, creating corporate branding and 3D designs for clients like Siemens and Messe Nürnberg.</li><li>Multilingual professional fluent in Chinese and German</li></ul>",
         "imageSrc": "./src/assets/img/hao_li.png"
       }
     ]
@@ -40,7 +40,7 @@
   },
   "Technology": {
     "title": "Technology",
-    "description": "We facilitate the transfer of cutting-edge technologies and patents to investors, fostering sustainable innovation and global commercialization through our extensive network.",
+    "description": "We facilitate the transfer of cutting-edge technologies and patents to investors, fostering sustainable innovation and global commercialization through our extensive network.<br>The following R&D results and patented technologies are seeking potential investors or buyers:<ul><li>THERMAL PLASMA SPUTTERING OF GRAPHENE - FOR AN ADVANCED METHOD OF APPLYING GRAPHENE TO LARGE SURFACES THROUGH</li><li>H2O BASED FUEL</li><li>H2 FOR THERAPEUTIC USE</li><li>HYPOCHLOROUS ACID BASED BUSINESS</li><li>LIPOSOMAL VITAMIN C BASED LOTIONS (SALVES OR BALMS)</li><li>SHAKE BASED ON LIPOSOMAL VC</li><li>LIPOSOMAL VC COMPOSED OF ALTERNATIVE INGREDIENTS</li><li>SPARK PLUG</li></ul>",
     "imageSrc": "./src/assets/img/Technology.jpg"
   },
   "China Affairs Expert": {
@@ -51,7 +51,7 @@
   "Food & Agriculture": {
     "title": "Food & Agriculture",
     "description": "Through our extensive global network, we support sustainable farming initiatives that enhance food security and drive economic prosperity. Our projects connect local producers with international buyers, ensuring fair trade practices and environmentally friendly methods. We collaborate with stakeholders to implement innovative solutions that reduce environmental impact while fostering long-term growth. This commitment to sustainability strengthens communities and promotes a healthier planet.",
-    "imageSrc": "./src/assets/img/pic_windmills.jpg"
+    "imageSrc": "./src/assets/img/pic_windmills2.jpg"
   },
   "Technology & Patents": {
     "title": "Technology & Patents",
@@ -59,6 +59,7 @@
     "imageSrc": [
       "./src/assets/img/pic_waterfuel.jpg",
       "./src/assets/img/pic_graphene.png",
+      "./src/assets/img/pic_technology.jpg",
       "./src/assets/img/pic_fuel.jpg",
       "./src/assets/img/pic_hitech.jpg"
     ]
