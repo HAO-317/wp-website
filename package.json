@@ -1,16 +1,17 @@
 {
-  "name": "wp-web",
-  "private": true,
-  "version": "0.0.0",
+  "name": "wagner-partners",
+  "version": "1.0.0",
+  "description": "Wagner & Partners Website",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "start": "vite"
   },
   "devDependencies": {
-    "@types/node": "^22.15.12",
-    "typescript": "~5.7.2",
-    "vite": "^6.3.5"
+    "@vitejs/plugin-legacy": "^5.3.1",
+    "imagemin": "^9.0.1",
+    "imagemin-webp": "^8.0.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.0"
   }
 }

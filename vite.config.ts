@@ -1,14 +1,21 @@
 import { defineConfig } from 'vite';
+import legacy from '@vitejs/plugin-legacy';
 
 export default defineConfig({
-  root: './',
+  plugins: [
+    legacy({
+      targets: ['defaults', 'not IE 11']
+    })
+  ],
   build: {
     outDir: 'dist',
-    emptyOutDir: true,
+    assetsDir: 'assets',
+    rollupOptions: {
+      input: 'index.html'
+    }
   },
+  base: '/',
   server: {
-    port: 3000,
-  },
-  base: '/', 
-  publicDir: 'public',
+    port: 8080
+  }
 });

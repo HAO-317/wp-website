@@ -24,7 +24,7 @@ const translations = {
   EN: {
     nav: ['HOME', 'ABOUT', 'SERVICES', 'PROJECTS', 'CONTACT'],
     hero: {
-      title: 'WAGNER & PARTNERS',
+      title: 'Wagner & Partners',
       subtitle: 'The Credible Way To Incredible Success'
     },
     about: {
@@ -109,12 +109,16 @@ const translations = {
     footer: {
       copyright: '© 2025 WAGNER & PARTNERS',
       imprint: 'IMPRINT'
+    },
+    meta: {
+      description: 'Wagner & Partners offers sustainable global business solutions for success.',
+      keywords: 'global business, sustainability, international resources, financial solutions, technology transfer'
     }
   },
   DE: {
     nav: ['STARTSEITE', 'ÜBER UNS', 'DIENSTLEISTUNGEN', 'PROJEKTE', 'KONTAKT'],
     hero: {
-      title: 'WAGNER & PARTNERS',
+      title: 'Wagner & Partners',
       subtitle: 'Der verlässliche Weg zu außergewöhnlichem Erfolg'
     },
     about: {
@@ -199,17 +203,13 @@ const translations = {
     footer: {
       copyright: '© 2025 WAGNER & PARTNERS',
       imprint: 'IMPRESSUM'
+    },
+    meta: {
+      description: 'Wagner & Partners bietet nachhaltige globale Geschäftslösungen für Erfolg.',
+      keywords: 'globales Geschäft, Nachhaltigkeit, internationale Ressourcen, Finanzlösungen, Technologietransfer'
     }
   }
 };
-
-// 规范化标题
-function normalizeTitle(title: string): string {
-  return title
-    .toLowerCase()
-    .replace(/&/g, 'and')
-    .trim();
-}
 
 // 加载 content.json
 async function loadContent(): Promise<ContentData> {
@@ -230,7 +230,7 @@ function createCarousel(imageSrc: string[]): string {
       ${imageSrc
         .map(
           (src, index) => `
-        <img src="${src}" alt="Carousel image ${index + 1}" class="carousel-image ${index === 0 ? 'active' : ''}" />
+        <img src="${src}" alt="Carousel image ${index + 1}" class="carousel-image ${index === 0 ? 'active' : ''}" loading="lazy" />
       `
         )
         .join('')}
@@ -254,7 +254,7 @@ const createModal = (content: ModalContent) => {
           .map(
             (partner) => `
           <div class="partner-box">
-            <img src="${partner.imageSrc}" alt="${partner.name}" class="partner-image" />
+            <img src="${partner.imageSrc}" alt="${partner.name}" class="partner-image" loading="lazy" />
             <h5>${partner.name}</h5>
             <p class="partner-title">${partner.title}</p>
             <p class="partner-professional">${partner.professionalTitle}</p>
@@ -268,7 +268,7 @@ const createModal = (content: ModalContent) => {
   } else {
     const imageHtml = Array.isArray(content.imageSrc)
       ? createCarousel(content.imageSrc)
-      : `<img src="${content.imageSrc}" alt="${content.title}" class="modal-image" />`;
+      : `<img src="${content.imageSrc}" alt="${content.title}" class="modal-image" loading="lazy" />`;
     contentHtml = `
       ${imageHtml}
       <h4>${content.title}</h4>
@@ -321,7 +321,7 @@ const createModal = (content: ModalContent) => {
   }
 };
 
-// 更新页面内容
+// 更新页面内容和 SEO 元数据
 function updateContent(lang: 'EN' | 'DE') {
   // 更新导航
   const navItems = document.querySelectorAll('.nav-list li');
@@ -394,6 +394,94 @@ function updateContent(lang: 'EN' | 'DE') {
   const footerImprint = document.querySelector('.footer .impressum') as HTMLElement;
   footerCopyright.textContent = translations[lang].footer.copyright;
   footerImprint.textContent = translations[lang].footer.imprint;
+
+  // 更新 SEO 元数据
+  document.title = `${translations[lang].hero.title} - ${translations[lang].hero.subtitle}`;
+
+  // Meta description
+  let metaDesc = document.querySelector('meta[name="description"]') as HTMLMetaElement;
+  if (!metaDesc) {
+    metaDesc = document.createElement('meta');
+    metaDesc.name = 'description';
+    document.head.appendChild(metaDesc);
+  }
+  metaDesc.content = translations[lang].meta.description;
+
+  // Meta keywords
+  let metaKeywords = document.querySelector('meta[name="keywords"]') as HTMLMetaElement;
+  if (!metaKeywords) {
+    metaKeywords = document.createElement('meta');
+    metaKeywords.name = 'keywords';
+    document.head.appendChild(metaKeywords);
+  }
+  metaKeywords.content = translations[lang].meta.keywords;
+
+  // Open Graph 标签
+  const ogTags = [
+    { property: 'og:title', content: `${translations[lang].hero.title} - ${translations[lang].hero.subtitle}` },
+    { property: 'og:description', content: translations[lang].meta.description },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: `${window.location.origin}${window.location.pathname}?lang=${lang}` },
+    { property: 'og:image', content: '/src/images/hero-bg.jpg' } // 替换为实际图片
+  ];
+  ogTags.forEach(tag => {
+    let ogMeta = document.querySelector(`meta[property="${tag.property}"]`) as HTMLMetaElement;
+    if (!ogMeta) {
+      ogMeta = document.createElement('meta');
+      ogMeta.setAttribute('property', tag.property);
+      document.head.appendChild(ogMeta);
+    }
+    ogMeta.content = tag.content;
+  });
+
+  // Hreflang 标签
+  const hreflangs = [
+    { hreflang: 'en', href: `${window.location.origin}${window.location.pathname}?lang=EN` },
+    { hreflang: 'de', href: `${window.location.origin}${window.location.pathname}?lang=DE` },
+    { hreflang: 'x-default', href: `${window.location.origin}${window.location.pathname}?lang=EN` }
+  ];
+  document.querySelectorAll('link[rel="alternate"]').forEach(link => link.remove());
+  hreflangs.forEach(hl => {
+    const link = document.createElement('link');
+    link.rel = 'alternate';
+    link.hreflang = hl.hreflang;
+    link.href = hl.href;
+    document.head.appendChild(link);
+  });
+
+  // 更新 JSON-LD 结构化数据
+  let jsonLdScript = document.querySelector('script[type="application/ld+json"]') as HTMLScriptElement;
+  if (!jsonLdScript) {
+    jsonLdScript = document.createElement('script');
+    jsonLdScript.type = 'application/ld+json';
+    document.head.appendChild(jsonLdScript);
+  }
+  jsonLdScript.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Wagner & Partners",
+    "url": window.location.origin,
+    "logo": "/src/images/logo.png", // 替换为实际 logo
+    "description": translations[lang].meta.description,
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@Wagner-partners.com",
+      "contactType": "Customer Service"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/wagner-partners", // 替换为实际社交链接
+      "https://twitter.com/wagner_partners"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": translations[lang].services.title,
+      "itemListElement": translations[lang].services.items.map(item => ({
+        "@type": "Offer",
+        "name": item.title,
+        "description": item.subtitle
+      }))
+    }
+  }, null, 2);
 }
 
 // 主逻辑
@@ -405,16 +493,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   const languageContainer = document.querySelector('.language') as HTMLElement;
   currentLangSpan.textContent = currentLang;
 
-  // 更新页面内容
+  // 更新页面内容和 SEO
   updateContent(currentLang);
 
   // 语言切换
   languageContainer.addEventListener('click', (e) => {
-    e.stopPropagation(); // 防止触发 document 的关闭事件
+    e.stopPropagation();
     langMenu.classList.toggle('active');
   });
 
-  // 鼠标离开时关闭选单
   languageContainer.addEventListener('mouseleave', () => {
     langMenu.classList.remove('active');
   });
@@ -431,7 +518,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   });
 
-  // 点击外部关闭语言选单
   document.addEventListener('click', (e) => {
     if (!langMenu.contains(e.target as Node) && !languageContainer.contains(e.target as Node)) {
       langMenu.classList.remove('active');
@@ -502,7 +588,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         const title = parent.querySelector('h4')?.textContent || '';
         const contentData = await loadContent();
         
-        // 查找 translations 中匹配的 originalKey
         let originalKey = '';
         const sections = [translations[currentLang].about.items, translations[currentLang].services.items, translations[currentLang].projects.items].flat();
         const matchingItem = sections.find(item => item.title === title);
@@ -510,7 +595,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           originalKey = matchingItem.originalKey;
         }
 
-        // 使用 originalKey 查找 content.json
         const content = originalKey ? contentData[currentLang][originalKey] : undefined;
         if (content) {
           createModal(content);
