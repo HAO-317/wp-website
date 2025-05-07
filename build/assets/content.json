@@ -1,0 +1,156 @@
+{
+  "EN": {
+    "MISSION": {
+      "title": "MISSION",
+      "description": "At Wagner&Partners®, we are committed to achieving extraordinary success through unwavering honesty, relentless innovation, and a steadfast dedication to sustainability. <br>We prioritize fostering a balanced work/life environment that empowers our employees to thrive both professionally and personally. <br>Our passion for excellence drives us to deliver superior products and services while upholding justice, respecting local laws, and adhering to ethical business practices endorsed by the International Chamber of Commerce. <br>We reject favoritism, value our employees as integral members of our corporate family, and support their career development with clear opportunities for growth and participation in our success. <br>As responsible corporate citizens, we actively support social causes, alleviate poverty, and protect the environment by avoiding harmful practices and preserving our planet’s ecosystem for future generations.",
+      "imageSrc": "./assets/pic_vision-Bp6WMWlH.jpg"
+    },
+    "TEAM": {
+      "title": "TEAM",
+      "partners": [
+        {
+          "name": "Gisbert Heinz Wagner",
+          "title": "Managing Director",
+          "professionalTitle": "Consulting Economist & Forensic Economist<br>📧 wagner@wagner-partners.com",
+          "bio": "<ul><li>Internationally recognized economist with over 50 years of experience in global trade, finance, and project management.</li><li>Principal at Arthur Young (now Ernst & Young), leading logistics and operations for clients worldwide.</li><li>Advised on major trade agreements, including NAFTA and CETA, shaping North American and EU economic policies.</li><li>Co-founded Paragon Estates GmbH in The Bahamas, managing post-hurricane rebuilding and tourism projects.</li><li>Facilitated high-value international financial transactions, including currency and precious metals trading.</li><li>Taught at universities like USC and Seneca College, developing materials on international finance and project management.</li><li>Trusted advisor to corporate leaders, governments, and institutions, ensuring value-driven, confidential outcomes.</li><li>Maintains a global network with footholds in North America, Western Europe, Asia, and the Caribbean.</li></ul>",
+          "imageSrc": "./assets/gisbert_wagner.png"
+        },
+        {
+          "name": "Hao Li",
+          "title": "Managing Director",
+          "professionalTitle": "Business Consultant<br>📧 lee@wagner-partners.com",
+          "bio": "<ul><li>Expert in international business relations, driving strategic partnerships across Europe and Asia.</li><li>Partner Manager at Wagner & Partners, advising on global business setups, risk management, and key account development.</li><li>Led operations and digital communication projects for a Canadian NGO, enhancing global outreach.</li><li>Former Managing Director at WINGMAN International and United Unique Expo, overseeing 200+ trade shows annually.</li><li>Developed key accounts with top brands like Huawei, VW, and Porsche, strengthening China-Europe business ties.</li><li>Built and managed local and global competency partnerships for trade fairs and events in Germany and Asia.</li><li>Spearheaded business development in China for Holtmann Messe + Event, establishing branch offices.</li><li>Experienced designer, creating corporate branding and 3D designs for clients like Siemens and Messe Nürnberg.</li><li>Multilingual professional fluent in Chinese and German</li></ul>",
+          "imageSrc": "./assets/hao_li.png"
+        }
+      ]
+    },
+    "STRUCTURE": {
+      "title": "STRUCTURE",
+      "description": "Our global structure and network, with strong footholds in North America, the Caribbean, Western Europe, and Asia, ensure efficient, sustainable operations and seamless support for clients worldwide.",
+      "imageSrc": "./assets/pic_global-D1BJasrt.jpg"
+    },
+    "International Business Resources": {
+      "title": "International Business Resources",
+      "description": "Do you have a high-quality product but struggle to access international or country-specific markets?<br>Are you seeking reliable, high-quality international suppliers for bulk purchases?<br>Do you need support to implement your international business plan by finding the right resources in your target country?<br>Are you looking to maximize returns on your assets through secure international markets?<br>We provide tailored solutions to help you achieve your global business objectives efficiently and sustainably.",
+      "imageSrc": "./assets/pic_metropolis_mannhatton-Be3zo-ew.jpg"
+    },
+    "Cross-Border Financial Solutions and Services": {
+      "title": "Cross-Border Financial Solutions and Services",
+      "description": "Through our global financial network, we offer customized financial solutions that enable maximum financial flexibility, asset growth, and risk mitigation while strictly adhering to legal regulations.<br>Our services are designed to support your financial goals across multiple countries, ensuring both legal and economic security.",
+      "imageSrc": "./assets/pic_frankfurt-VUro6ja5.jpg"
+    },
+    "Technology": {
+      "title": "Technology",
+      "description": "We facilitate the transfer of cutting-edge technologies and patents to investors, fostering sustainable innovation and global commercialization through our extensive network.<br>The following R&D results and patented technologies are seeking potential investors or buyers:<ul><li>THERMAL PLASMA SPUTTERING OF GRAPHENE - FOR AN ADVANCED METHOD OF APPLYING GRAPHENE TO LARGE SURFACES THROUGH</li><li>H2O BASED FUEL</li><li>H2 FOR THERAPEUTIC USE</li><li>HYPOCHLOROUS ACID BASED BUSINESS</li><li>LIPOSOMAL VITAMIN C BASED LOTIONS (SALVES OR BALMS)</li><li>SHAKE BASED ON LIPOSOMAL VC</li><li>LIPOSOMAL VC COMPOSED OF ALTERNATIVE INGREDIENTS</li><li>SPARK PLUG</li></ul>",
+      "imageSrc": "./assets/Technology-BdImaA_v.jpg"
+    },
+    "China Affairs Expert": {
+      "title": "China Affairs Expert",
+      "description": "Do you want to connect with the world’s second-largest economy and its highest growth rate?<br>Are you aiming to establish your products and business in a market of 1.4 billion people?<br>Do you need assistance navigating political or regulatory challenges in China?<br>With our unique relationships and specialized channels, we provide tailored solutions to maximize your interests and successfully address both routine and complex challenges.",
+      "imageSrc": "./assets/pic_shanghai-B7ij2uZI.jpg"
+    },
+    "Food & Agriculture": {
+      "title": "Food & Agriculture",
+      "description": "Through our extensive global network, we support sustainable farming initiatives that enhance food security and drive economic prosperity. Our projects connect local producers with international buyers, ensuring fair trade practices and environmentally friendly methods. We collaborate with stakeholders to implement innovative solutions that reduce environmental impact while fostering long-term growth. This commitment to sustainability strengthens communities and promotes a healthier planet.",
+      "imageSrc": "./assets/pic_windmills2.jpg"
+    },
+    "Technology & Patents": {
+      "title": "Technology & Patents",
+      "description": "Our global network empowers innovators by facilitating the transfer of cutting-edge technologies and patents to investors worldwide. We provide comprehensive support, from intellectual property protection to market entry strategies, ensuring sustainable commercialization. Our expertise helps bridge the gap between innovation and impact, creating value for businesses and communities. This approach drives technological advancement while prioritizing environmental responsibility.<br>The following R&D results and patented technologies are seeking potential investors or buyers:<ul><li>THERMAL PLASMA SPUTTERING OF GRAPHENE - FOR AN ADVANCED METHOD OF APPLYING GRAPHENE TO LARGE SURFACES THROUGH</li><li>H2O BASED FUEL</li><li>H2 FOR THERAPEUTIC USE</li><li>HYPOCHLOROUS ACID BASED BUSINESS</li><li>LIPOSOMAL VITAMIN C BASED LOTIONS (SALVES OR BALMS)</li><li>SHAKE BASED ON LIPOSOMAL VC</li><li>LIPOSOMAL VC COMPOSED OF ALTERNATIVE INGREDIENTS</li><li>SPARK PLUG</li></ul>",
+      "imageSrc": [
+        "./assets/pic_waterfuel-C9xS6szo.jpg",
+        "./assets/pic_graphene.png",
+        "./assets/pic_technology.jpg",
+        "./assets/pic_fuel.jpg",
+        "./assets/pic_hitech.jpg"
+      ]
+    },
+    "Investment & Foundation": {
+      "title": "Investment & Foundation",
+      "description": "Leveraging our global network, we offer secure investment opportunities that balance profitability with sustainability. Our foundations support initiatives that drive economic growth and social good, from education to poverty alleviation. We partner with clients to create lasting impact, ensuring investments align with environmental and ethical standards. This holistic approach fosters prosperity and strengthens communities worldwide.",
+      "imageSrc": "./assets/pic_cryptocurrency-C2FvXCwx.jpg"
+    },
+    "Imprint": {
+      "title": "Imprint",
+      "description": "<p>Wagner & Partners UG<br>Managing Directors: Gisbert H. Wagner, Hao Li<br>Address: Donaustrasse 27, 40699 Erkrath, Germany<br>Phone: +49 (0)2104 5080 558<br>Email: info@wagner-partners.com<br>Website: www.wagner-partners.com<br>Tax Number: 147/5882/0902<br>VAT ID: DE317682413<br>Commercial Register: HRB 28823 Wuppertal<br>Responsible for content according to § 55 Abs. 2 RStV: Gisbert H. Wagner, Hao Li</p><p>This website is operated in compliance with German law. All rights reserved.</p>",
+      "imageSrc": "./assets/pic_wp.jpg"
+    }
+  },
+  "DE": {
+    "MISSION": {
+      "title": "MISSION",
+      "description": "Bei Wagner&Partners® setzen wir uns für außergewöhnlichen Erfolg durch unerschütterliche Ehrlichkeit, unermüdliche Innovation und ein unerschütterliches Engagement für Nachhaltigkeit ein. <br>Wir legen Wert auf ein ausgewogenes Arbeits- und Lebensumfeld, das unseren Mitarbeitern ermöglicht, sowohl beruflich als auch persönlich zu gedeihen. <br>Unsere Leidenschaft für Exzellenz treibt uns an, überlegene Produkte und Dienstleistungen zu liefern, während wir Gerechtigkeit wahren, lokale Gesetze respektieren und ethische Geschäftspraktiken einhalten, die von der Internationalen Handelskammer unterstützt werden. <br>Wir lehnen Bevorzugung ab, schätzen unsere Mitarbeiter als integrale Mitglieder unserer Unternehmensfamilie und fördern ihre berufliche Entwicklung mit klaren Wachstumschancen und Beteiligung an unserem Erfolg. <br>Als verantwortungsbewusste Unternehmensbürger unterstützen wir aktiv soziale Anliegen, lindern Armut und schützen die Umwelt, indem wir schädliche Praktiken vermeiden und das Ökosystem unseres Planeten für zukünftige Generationen bewahren.",
+      "imageSrc": "./assets/pic_vision-Bp6WMWlH.jpg"
+    },
+    "TEAM": {
+      "title": "TEAM",
+      "partners": [
+        {
+          "name": "Gisbert Heinz Wagner",
+          "title": "Geschäftsführer",
+          "professionalTitle": "Beratender Wirtschaftswissenschaftler & Forensischer Wirtschaftswissenschaftler<br>📧 wagner@wagner-partners.com",
+          "bio": "<ul><li>International anerkannter Wirtschaftswissenschaftler mit über 50 Jahren Erfahrung im globalen Handel, Finanzen und Projektmanagement.</li><li>Direktor bei Arthur Young (heute Ernst & Young), Leitung von Logistik und Betrieb für Kunden weltweit.</li><li>Beratung bei wichtigen Handelsabkommen wie NAFTA und CETA, Gestaltung der Wirtschaftspolitik in Nordamerika und der EU.</li><li>Mitbegründer von Paragon Estates GmbH auf den Bahamas, Leitung von Wiederaufbauprojekten nach Hurrikans und Tourismusprojekten.</li><li>Erleichterung hochvolumiger internationaler Finanztransaktionen, einschließlich Währungs- und Edelmetallhandel.</li><li>Dozent an Universitäten wie USC und Seneca College, Entwicklung von Lehrmaterialien zu internationalen Finanzen und Projektmanagement.</li><li>Vertrauenswürdiger Berater für Unternehmensführer, Regierungen und Institutionen, Sicherstellung wertorientierter, vertraulicher Ergebnisse.</li><li>Unterhält ein globales Netzwerk mit Standorten in Nordamerika, Westeuropa, Asien und der Karibik.</li></ul>",
+          "imageSrc": "./assets/gisbert_wagner.png"
+        },
+        {
+          "name": "Hao Li",
+          "title": "Geschäftsführer",
+          "professionalTitle": "Unternehmensberater<br>📧 lee@wagner-partners.com",
+          "bio": "<ul><li>Experte für internationale Geschäftsbeziehungen, Förderung strategischer Partnerschaften in Europa und Asien.</li><li>Partner-Manager bei Wagner & Partners, Beratung zu globalen Geschäftseinrichtungen, Risikomanagement und Entwicklung wichtiger Kunden.</li><li>Leitung von Betriebs- und digitalen Kommunikationsprojekten für eine kanadische NGO, Verbesserung der globalen Reichweite.</li><li>Ehemaliger Geschäftsführer bei WINGMAN International und United Unique Expo, Überwachung von über 200 Messen jährlich.</li><li>Entwicklung wichtiger Kunden mit Top-Marken wie Huawei, VW und Porsche, Stärkung der Geschäftsbeziehungen zwischen China und Europa.</li><li>Aufbau und Management lokaler und globaler Kompetenzpartnerschaften für Messen und Veranstaltungen in Deutschland und Asien.</li><li>Führung der Geschäftsentwicklung in China für Holtmann Messe + Event, Einrichtung von Niederlassungen.</li><li>Erfahrener Designer, Erstellung von Unternehmensbranding und 3D-Designs für Kunden wie Siemens und Messe Nürnberg.</li><li>Mehrsprachiger Profi, fließend in Chinesisch und Deutsch.</li></ul>",
+          "imageSrc": "./assets/hao_li.png"
+        }
+      ]
+    },
+    "STRUCTURE": {
+      "title": "STRUKTUR",
+      "description": "Unsere globale Struktur und unser Netzwerk mit starken Standorten in Nordamerika, der Karibik, Westeuropa und Asien gewährleisten effiziente, nachhaltige Abläufe und nahtlose Unterstützung für Kunden weltweit.",
+      "imageSrc": "./assets/pic_global-D1BJasrt.jpg"
+    },
+    "International Business Resources": {
+      "title": "Internationale Geschäftsressourcen",
+      "description": "Haben Sie ein hochwertiges Produkt, aber Schwierigkeiten, Zugang zu internationalen oder länderspezifischen Märkten zu finden?<br>Suchen Sie nach zuverlässigen, hochwertigen internationalen Lieferanten für Großeinkäufe?<br>Benötigen Sie Unterstützung, um Ihren internationalen Geschäftsplan umzusetzen, indem Sie die richtigen Ressourcen in Ihrem Zielland finden?<br>Möchten Sie die Rendite Ihrer Vermögenswerte durch sichere internationale Märkte maximieren?<br>Wir bieten maßgeschneiderte Lösungen, um Ihre globalen Geschäftsziele effizient und nachhaltig zu erreichen.",
+      "imageSrc": "./assets/pic_metropolis_mannhatton-Be3zo-ew.jpg"
+    },
+    "Cross-Border Financial Solutions and Services": {
+      "title": "Grenzüberschreitende Finanzlösungen und Dienstleistungen",
+      "description": "Durch unser globales Finanznetzwerk bieten wir maßgeschneiderte Finanzlösungen, die maximale finanzielle Flexibilität, Vermögenswachstum und Risikominderung ermöglichen, während wir strikt die gesetzlichen Vorschriften einhalten.<br>Unsere Dienstleistungen sind darauf ausgelegt, Ihre finanziellen Ziele in mehreren Ländern zu unterstützen und sowohl rechtliche als auch wirtschaftliche Sicherheit zu gewährleisten.",
+      "imageSrc": "./assets/pic_frankfurt-VUro6ja5.jpg"
+    },
+    "Technology": {
+      "title": "Technologie",
+      "description": "Wir fördern die Übertragung modernster Technologien und Patente an Investoren und unterstützen nachhaltige Innovation und globale Kommerzialisierung durch unser umfangreiches Netzwerk.<br>Die folgenden F&E-Ergebnisse und patentierte Technologien suchen potenzielle Investoren oder Käufer:<ul><li>THERMISCHES PLASMASPRAYEN VON GRAPHEN - FÜR EINE FORTSCHRITTLICHE METHODE ZUR ANWENDUNG VON GRAPHEN AUF GROSSEN OBERFLÄCHEN</li><li>H2O-BASIERTER BRENNSTOFF</li><li>H2 FÜR THERAPEUTISCHE ANWENDUNGEN</li><li>HYPOCHLORSÄUREBASIERTES GESCHÄFT</li><li>LIPOSOMALE VITAMIN-C-BASIERTE LOTIONEN (SALBEN ODER BALSAME)</li><li>SHAKE BASIEREND AUF LIPOSOMALEM VC</li><li>LIPOSOMALES VC AUS ALTERNATIVEN INHALTSSTOFFEN</li><li>ZÜNDKERZE</li></ul>",
+      "imageSrc": "./assets/Technology-BdImaA_v.jpg"
+    },
+    "China Affairs Expert": {
+      "title": "Experte für China-Angelegenheiten",
+      "description": "Möchten Sie mit der zweitgrößten Volkswirtschaft der Welt und ihrer höchsten Wachstumsrate in Kontakt treten?<br>Zielen Sie darauf ab, Ihre Produkte und Ihr Geschäft in einem Markt mit 1,4 Milliarden Menschen zu etablieren?<br>Benötigen Sie Unterstützung bei der Navigation durch politische oder regulatorische Herausforderungen in China?<br>Mit unseren einzigartigen Beziehungen und spezialisierten Kanälen bieten wir maßgeschneiderte Lösungen, um Ihre Interessen zu maximieren und sowohl routinemäßige als auch komplexe Herausforderungen erfolgreich zu bewältigen.",
+      "imageSrc": "./assets/pic_shanghai-B7ij2uZI.jpg"
+    },
+    "Food & Agriculture": {
+      "title": "Lebensmittel & Landwirtschaft",
+      "description": "Durch unser umfangreiches globales Netzwerk unterstützen wir nachhaltige landwirtschaftliche Initiativen, die die Ernährungssicherheit stärken und wirtschaftlichen Wohlstand fördern. Unsere Projekte verbinden lokale Produzenten mit internationalen Käufern und gewährleisten faire Handelspraktiken und umweltfreundliche Methoden. Wir arbeiten mit Interessengruppen zusammen, um innovative Lösungen umzusetzen, die die Umweltbelastung reduzieren und langfristiges Wachstum fördern. Dieses Engagement für Nachhaltigkeit stärkt Gemeinschaften und fördert einen gesünderen Planeten.",
+      "imageSrc": "./assets/pic_windmills2.jpg"
+    },
+    "Technology & Patents": {
+      "title": "Technologie & Patente",
+      "description": "Unser globales Netzwerk befähigt Innovatoren, indem es die Übertragung modernster Technologien und Patente an Investoren weltweit erleichtert. Wir bieten umfassende Unterstützung, von Schutz des geistigen Eigentums bis hin zu Markteintrittsstrategien, und gewährleisten eine nachhaltige Kommerzialisierung. Unsere Expertise hilft, die Kluft zwischen Innovation und Wirkung zu überbrücken und schafft Werte für Unternehmen und Gemeinschaften. Dieser Ansatz treibt technologischen Fortschritt voran, während er ökologische Verantwortung priorisiert.<br>Die folgenden F&E-Ergebnisse und patentierte Technologien suchen potenzielle Investoren oder Käufer:<ul><li>THERMISCHES PLASMASPRAYEN VON GRAPHEN - FÜR EINE FORTSCHRITTLICHE METHODE ZUR ANWENDUNG VON GRAPHEN AUF GROSSEN OBERFLÄCHEN</li><li>H2O-BASIERTER BRENNSTOFF</li><li>H2 FÜR THERAPEUTISCHE ANWENDUNGEN</li><li>HYPOCHLORSÄUREBASIERTES GESCHÄFT</li><li>LIPOSOMALE VITAMIN-C-BASIERTE LOTIONEN (SALBEN ODER BALSAME)</li><li>SHAKE BASIEREND AUF LIPOSOMALEM VC</li><li>LIPOSOMALES VC AUS ALTERNATIVEN INHALTSSTOFFEN</li><li>ZÜNDKERZE</li></ul>",
+      "imageSrc": [
+        "./assets/pic_waterfuel-C9xS6szo.jpg",
+        "./assets/pic_graphene.png",
+        "./assets/pic_technology.jpg",
+        "./assets/pic_fuel.jpg",
+        "./assets/pic_hitech.jpg"
+      ]
+    },
+    "Investment & Foundation": {
+      "title": "Investitionen & Stiftungen",
+      "description": "Mit unserem globalen Netzwerk bieten wir sichere Investitionsmöglichkeiten, die Rentabilität mit Nachhaltigkeit in Einklang bringen. Unsere Stiftungen unterstützen Initiativen, die wirtschaftliches Wachstum und soziales Wohl fördern, von Bildung bis zur Armutsbekämpfung. Wir arbeiten mit Kunden zusammen, um nachhaltige Wirkung zu erzielen, und stellen sicher, dass Investitionen mit ökologischen und ethischen Standards übereinstimmen. Dieser ganzheitliche Ansatz fördert Wohlstand und stärkt Gemeinschaften weltweit.",
+      "imageSrc": "./assets/pic_cryptocurrency-C2FvXCwx.jpg"
+    },
+    "Impressum": {
+      "title": "Impressum",
+      "description": "<p>Wagner & Partners UG<br>Geschäftsführer: Gisbert H. Wagner, Hao Li<br>Adresse: Donaustrasse 27, 40699 Erkrath, Deutschland<br>Telefon: +49 (0)2104 5080 558<br>E-Mail: info@wagner-partners.com<br>Website: www.wagner-partners.com<br>Steuernummer: 147/5882/0902<br>USt-IdNr.: DE317682413<br>Handelsregister: HRB 28823 Wuppertal<br>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: Gisbert H. Wagner, Hao Li</p><p>Diese Website wird in Übereinstimmung mit deutschem Recht betrieben. Alle Rechte vorbehalten.</p>",
+      "imageSrc": "./assets/pic_wp.jpg"
+    }
+  }
+}
