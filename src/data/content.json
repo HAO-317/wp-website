@@ -1,0 +1,81 @@
+{
+  "MISSION": {
+    "title": "MISSION",
+    "description": "At Wagner&Partners®, we are committed to achieving extraordinary success through unwavering honesty, relentless innovation, and a steadfast dedication to sustainability. We prioritize fostering a balanced work/life environment that empowers our employees to thrive both professionally and personally. Our passion for excellence drives us to deliver superior products and services while upholding justice, respecting local laws, and adhering to ethical business practices endorsed by the International Chamber of Commerce. We reject favoritism, value our employees as integral members of our corporate family, and support their career development with clear opportunities for growth and participation in our success. As responsible corporate citizens, we actively support social causes, alleviate poverty, and protect the environment by avoiding harmful practices and preserving our planet’s ecosystem for future generations.",
+    "imageSrc": "./src/assets/img/pic_vision.jpg"
+  },
+  "TEAM": {
+    "title": "TEAM",
+    "partners": [
+      {
+        "name": "Gisbert Wagner",
+        "title": "Managing Director",
+        "professionalTitle": "Certified Business Consultant",
+        "bio": "<ul><li>Over 20 years of experience in international business consulting.</li><li>Specialized in strategic planning and market expansion.</li><li>Led projects in Europe, Asia, and North America.</li><li>Expert in sustainable business practices.</li><li>Regular speaker at global industry conferences.</li><li>Ph.D. in Business Administration from LMU Munich.</li></ul>",
+        "imageSrc": "./src/assets/img/gisbert_wagner.png"
+      },
+      {
+        "name": "Hao Li",
+        "title": "Managing Director",
+        "professionalTitle": "Certified Financial Analyst",
+        "bio": "<ul><li>15 years of expertise in cross-border financial solutions.</li><li>Deep knowledge of Chinese and Asian markets.</li><li>Developed financial strategies for Fortune 500 companies.</li><li>Advocate for sustainable investment practices.</li><li>MBA from Tsinghua University, Beijing.</li><li>Fluent in Mandarin, English, and German.</li></ul>",
+        "imageSrc": "./src/assets/img/hao_li.png"
+      }
+    ]
+  },
+  "STRUCTURE": {
+    "title": "STRUCTURE",
+    "description": "Our global structure and network, with strong footholds in North America, the Caribbean, Western Europe, and Asia, ensure efficient, sustainable operations and seamless support for clients worldwide.",
+    "imageSrc": "./src/assets/img/pic_global.jpg"
+  },
+  "International Business Resources": {
+    "title": "International Business Resources",
+    "description": "Do you have a high-quality product but struggle to access international or country-specific markets?<br>Are you seeking reliable, high-quality international suppliers for bulk purchases?<br>Do you need support to implement your international business plan by finding the right resources in your target country?<br>Are you looking to maximize returns on your assets through secure international markets?<br>We provide tailored solutions to help you achieve your global business objectives efficiently and sustainably.",
+    "imageSrc": "./src/assets/img/pic_metropolis_mannhatton.jpg"
+  },
+  "Cross-Border Financial Solutions and Services": {
+    "title": "Cross-Border Financial Solutions and Services",
+    "description": "Through our global financial network, we offer customized financial solutions that enable maximum financial flexibility, asset growth, and risk mitigation while strictly adhering to legal regulations.<br>Our services are designed to support your financial goals across multiple countries, ensuring both legal and economic security.",
+    "imageSrc": "./src/assets/img/pic_frankfurt.jpg"
+  },
+  "Technology": {
+    "title": "Technology",
+    "description": "We facilitate the transfer of cutting-edge technologies and patents to investors, fostering sustainable innovation and global commercialization through our extensive network.",
+    "imageSrc": "./src/assets/img/Technology.jpg"
+  },
+  "China Affairs Expert": {
+    "title": "China Affairs Expert",
+    "description": "Do you want to connect with the world’s second-largest economy and its highest growth rate?<br>Are you aiming to establish your products and business in a market of 1.4 billion people?<br>Do you need assistance navigating political or regulatory challenges in China?<br>With our unique relationships and specialized channels, we provide tailored solutions to maximize your interests and successfully address both routine and complex challenges.",
+    "imageSrc": "./src/assets/img/pic_metropolis4.jpg"
+  },
+  "Food & Agriculture": {
+    "title": "Food & Agriculture",
+    "description": "Through our extensive global network, we support sustainable farming initiatives that enhance food security and drive economic prosperity. Our projects connect local producers with international buyers, ensuring fair trade practices and environmentally friendly methods. We collaborate with stakeholders to implement innovative solutions that reduce environmental impact while fostering long-term growth. This commitment to sustainability strengthens communities and promotes a healthier planet.",
+    "imageSrc": "./src/assets/img/pic_windmills.jpg"
+  },
+  "Technology & Patents": {
+    "title": "Technology & Patents",
+    "description": "Our global network empowers innovators by facilitating the transfer of cutting-edge technologies and patents to investors worldwide. We provide comprehensive support, from intellectual property protection to market entry strategies, ensuring sustainable commercialization. Our expertise helps bridge the gap between innovation and impact, creating value for businesses and communities. This approach drives technological advancement while prioritizing environmental responsibility.<br>The following R&D results and patented technologies are seeking potential investors or buyers:<ul><li>THERMAL PLASMA SPUTTERING OF GRAPHENE - FOR AN ADVANCED METHOD OF APPLYING GRAPHENE TO LARGE SURFACES THROUGH</li><li>H2O BASED FUEL</li><li>H2 FOR THERAPEUTIC USE</li><li>HYPOCHLOROUS ACID BASED BUSINESS</li><li>LIPOSOMAL VITAMIN C BASED LOTIONS (SALVES OR BALMS)</li><li>SHAKE BASED ON LIPOSOMAL VC</li><li>LIPOSOMAL VC COMPOSED OF ALTERNATIVE INGREDIENTS</li><li>SPARK PLUG</li></ul>",
+    "imageSrc": [
+      "./src/assets/img/pic_waterfuel.jpg",
+      "./src/assets/img/pic_graphene.png",
+      "./src/assets/img/pic_fuel.jpg",
+      "./src/assets/img/pic_hitech.jpg"
+    ]
+  },
+  "Investment & Foundation": {
+    "title": "Investment & Foundation",
+    "description": "Leveraging our global network, we offer secure investment opportunities that balance profitability with sustainability. Our foundations support initiatives that drive economic growth and social good, from education to poverty alleviation. We partner with clients to create lasting impact, ensuring investments align with environmental and ethical standards. This holistic approach fosters prosperity and strengthens communities worldwide.",
+    "imageSrc": "./src/assets/img/pic_cryptocurrency.jpg"
+  },
+  "Imprint": {
+    "title": "Imprint",
+    "description": "<p>Wagner & Partners UG<br>Managing Directors: Gisbert H. Wagner, Hao Li<br>Address: Donaustrasse 27, 40699 Erkrath, Germany<br>Phone: +49 (0)2104 5080 558<br>Email: info@wagner-partners.com<br>Website: www.wagner-partners.com<br>Tax Number: 147/5882/0902<br>VAT ID: DE317682413<br>Commercial Register: HRB 28823 Wuppertal<br>Responsible for content according to § 55 Abs. 2 RStV: Gisbert H. Wagner, Hao Li</p><p>This website is operated in compliance with German law. All rights reserved.</p>",
+    "imageSrc": "./src/assets/img/pic_wp.jpg"
+  },
+  "Impressum": {
+    "title": "Impressum",
+    "description": "<p>Wagner & Partners UG<br>Geschäftsführer: Gisbert H. Wagner, Hao Li<br>Adresse: Donaustrasse 27, 40699 Erkrath, Deutschland<br>Telefon: +49 (0)2104 5080 558<br>E-Mail: info@wagner-partners.com<br>Website: www.wagner-partners.com<br>Steuernummer: 147/5882/0902<br>USt-IdNr.: DE317682413<br>Handelsregister: HRB 28823 Wuppertal<br>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: Gisbert H. Wagner, Hao Li</p><p>Diese Website wird in Übereinstimmung mit deutschem Recht betrieben. Alle Rechte vorbehalten.</p>",
+    "imageSrc": "./src/assets/img/pic_wp.jpg"
+  }
+}
