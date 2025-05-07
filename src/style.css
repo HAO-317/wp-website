@@ -23,17 +23,12 @@
   --back-color: #6A6A6A;
   --txt-trans: rgba(255, 255, 255, 0.50);
   --color-blue: rgba(0, 89, 255, 0.85);
-  --font-stack: "Helvetica Neue", "Noto Sans SC", Arial, sans-serif;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   /* border: 1px dashed rgb(21, 255, 0); */
-}
-
-html, body, p, h1, h2, h3, h4, h5, li, input, textarea, .modal-description, .partner-bio {
-  font-family: var(--font-stack);
 }
 
 html {
@@ -45,7 +40,7 @@ html {
 h1 {
   font-family: "NixieOne";
   font-size: 5.6rem;
-  font-weight:bold;
+  font-weight: lighter;
   text-shadow: 0.3rem 0.3rem 0.5rem rgb(0, 0, 0);
 }
 h2 {
@@ -584,13 +579,16 @@ html {
 
 .modal-close {
   position: absolute;
-  bottom: 16px;
-  right: 20px;
+  top: 0px;
+  right: 14px;
   font-size: 4rem;
   cursor: pointer;
   color: var(--color);
 }
-
+.modal-close:hover { 
+  transform: scale(1.1);
+  text-shadow: 1px 1px 3px var(--txt-blu);
+} 
 
 .modal-description {
   font-family: "Helvetica Neue";
@@ -723,63 +721,46 @@ html {
   text-align: center;
 }
 
-/* 语言选择器 */
 .language {
   position: relative;
-  display: flex;
-  align-items: center;
   cursor: pointer;
-}
-
-.language-toggle {
-  font-family: "Alegreya Sans";
-  font-size: 2rem;
-  color: white;
   display: flex;
   align-items: center;
-  gap: 5px;
+  z-index: 101; /* 高于 .nav-list 的 100 */
 }
 
-.language-toggle:hover {
-  color: yellow;
-  transform: scale(1);
-  text-shadow: 1px 1px 3px black;
-}
-
-.language-menu {
-  display: none;
+.lang-menu {
   position: absolute;
-  top: 32px;
-  right: -15px;
-  background-color: rgba(0, 89, 255, 0.95);
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  list-style: none;
-  padding: 10px 0;
-  min-width: 75px;
-  z-index: 100;
+  top: 100%;
+  right: -20px;
+  background-color: rgba(0, 89, 255, 0.75);
+  border-radius: 0 0 0 10px;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5);
+  display: none;
+  width: 80px; /* 固定宽度，防止抖动 */
+  z-index: 101;
 }
 
-.language-menu.active {
+.lang-menu.active {
   display: block;
 }
 
-.language-menu li {
+.lang-option {
   font-family: "Alegreya Sans";
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 15px;
   cursor: pointer;
   text-align: center;
 }
 
-.language-menu li:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+.lang-option:hover {
   color: yellow;
+  text-shadow: 1px 1px 3px black;
+  background-color: rgba(0, 89, 255, 0.9);
 }
 
-
-/*- 平板屏幕（768px ≤ 宽度 < 1024px） ---------*/
+/*-------- 平板屏幕（768px ≤ 宽度 < 1024px） ----------*/
 @media screen and (max-width: 1023px) {
   /* About 和 Projects */
   .container-middle {
@@ -821,11 +802,11 @@ html {
     position: absolute;
     top: 82px; /* header 高度 */
     right: -250px; /* 初始隐藏 */
-    width: 200px; /* 固定宽度 */
+    width: 220px; /* 固定宽度 */
     height: auto; /* 自适应高度 */
     max-height: 400px; /* 限制最大高度 */
     background-color: rgba(0, 89, 255, 0.75);
-    padding: 20px 40px;
+    padding: 20px;
     border-radius: 0 0 0 10px; /* 左下圆角 */
     box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5);
     z-index: 100;
@@ -841,7 +822,7 @@ html {
   .nav-list li {
     margin: 10px 0;
     text-align: left; /* 改为左对齐 */
-    padding-left: 20px; /* 添加左内边距，增强视觉效果 */
+    padding-left: 10px; /* 添加左内边距，增强视觉效果 */
     font-size: 2rem;
   }
 
@@ -892,18 +873,19 @@ html {
     width: 100%;
     max-width: 550px;
   }
-  .language-menu {
-    top: 25px;
-    right: -10px;
-    width: 100px;
+
+  .lang-menu {
+    width: 80px;
+    right: -10px; /* 微调，适应 nav 压缩 */
   }
-  .language-menu li {
-    font-size: 1.6rem;
-    padding: 8px 15px;
+  .lang-option {
+    font-size: 1.8rem;
+    padding: 8px 10px;
   }
 }
 
-/*---- 手机屏幕（宽度 < 768px） --------*/
+
+/*-------- 手机屏幕（宽度 < 768px） -----------*/
 @media screen and (max-width: 767px) {
   /* About 和 Projects */
   .container-middle {
@@ -972,7 +954,7 @@ html {
     height: auto; /* 自适应高度 */
     max-height: 400px; /* 限制最大高度 */
     background-color: rgba(0, 89, 255, 0.75);
-    padding: 20px 40px;
+    padding: 15px;
     border-radius: 0 0 0 10px;
     box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5);
     z-index: 100;
@@ -1059,18 +1041,17 @@ html {
   .modal-content{
     padding: 20px;
   }
-  .language-menu {
-    top: 20px;
+  .lang-menu {
+    width: 70px;
     right: -5px;
-    width: 80px;
   }
-  .language-menu li {
-    font-size: 1.4rem;
-    padding: 6px 10px;
+  .lang-option {
+    font-size: 1.6rem;
+    padding: 6px 8px;
   }
 }
 
-/*------ 电脑屏幕（≥ 1024px） ----------*/
+/*------- 电脑屏幕（≥ 1024px） -----------*/
 @media screen and (min-width: 1024px) {
   .hamburger {
     display: none;
