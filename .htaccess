@@ -1,0 +1,1 @@
+AddType application/json .json AddType application/javascript .js <FilesMatch ".(js|css|jpg|png|svg)$"> Header set Cache-Control "max-age=31536000, public"
